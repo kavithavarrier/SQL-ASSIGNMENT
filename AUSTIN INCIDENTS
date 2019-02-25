@@ -1,0 +1,20 @@
+1.#SELECT * FROM `bigquery-public-data.austin_incidents.incidents_2008` LIMIT 1000
+#RESULT DISPLAYED
+2.#SELECT  unique_key,time,address FROM `bigquery-public-data.austin_incidents.incidents_2008` LIMIT 1000
+#RESULT DISPLAYED WITH unique_key,time and address
+3.#SELECT unique_key,date,longitude FROM `bigquery-public-data.austin_incidents.incidents_2008` LIMIT 1000
+#result displayed-data with unique key,date,longitude
+4.#SELECT * FROM `bigquery-public-data.austin_incidents.incidents_2008`ORDER BY unique_key DESC LIMIT 
+#RESULT- 1st value-200886901388 last value-200883340601
+5.#SELECT COUNT(unique_key) FROM `bigquery-public-data.austin_incidents.incidents_2008`LIMIT 1000
+#RESULT-179524
+6.#SELECT * FROM `bigquery-public-data.austin_incidents.incidents_2008` WHERE address='200 BLOCK E 7TH ST' LIMIT 1000
+#RESULT -3 Unique key with the address 200 block E 7th ST
+7.#SELECT MIN(longitude) FROM `bigquery-public-data.austin_incidents.incidents_2008` LIMIT 1000
+#RESULT-1=-98.08515129
+8.#SELECT AVG(latitude) FROM `bigquery-public-data.austin_incidents.incidents_2008` LIMIT 1000
+#RESULT-30.282784390290093
+9.#SELECT latitude FROM  bigquery-public-data.austin_incidents.incidents_2008` GROUP BY latitude LIMIT 1000
+#RESULT DISPLAYED-25-30.278
+10. SELECT MAX(latitude) FROM `bigquery-public-data.austin_incidents.incidents_2008` LIMIT 1000
+#RESULT DISPLAYED 30.5117
